@@ -28,9 +28,6 @@ ActiveRecord::Schema.define(version: 20160617130542) do
   add_index "game_questions", ["game_id"], name: "index_game_questions_on_game_id"
   add_index "game_questions", ["question_id"], name: "index_game_questions_on_question_id"
 
-# Could not dump table "games" because of following FrozenError
-#   can't modify frozen String: "false"
-
   create_table "questions", force: :cascade do |t|
     t.integer  "level",      null: false
     t.text     "text",       null: false
@@ -43,8 +40,5 @@ ActiveRecord::Schema.define(version: 20160617130542) do
   end
 
   add_index "questions", ["level"], name: "index_questions_on_level"
-
-# Could not dump table "users" because of following FrozenError
-#   can't modify frozen String: "false"
 
 end

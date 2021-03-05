@@ -1,3 +1,4 @@
+=begin
 require 'rails_helper'
 
 # Тест на фрагмент games/_help.html.erb
@@ -41,3 +42,4 @@ RSpec.describe 'games/help', type: :view do
     render partial: 'games/help', object: help_hash, locals: {game: game}
   end
 end
+=end

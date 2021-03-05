@@ -1,3 +1,4 @@
+=begin
 module MySpecHelper
 
   # наш хелпер, для населения базы нужным количеством рандомных вопросов
@@ -11,4 +12,4 @@ end
 
 RSpec.configure do |c|
   c.include MySpecHelper
-end
+end=end

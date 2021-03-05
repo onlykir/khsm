@@ -1,14 +1,10 @@
-# (c) goodprogrammer.ru
-
 require 'rails_helper'
 
-# Тестовый сценарий для модели игрового вопроса,
-# в идеале весь наш функционал (все методы) должны быть протестированы.
 RSpec.describe GameQuestion, type: :model do
 
   # задаем локальную переменную game_question, доступную во всех тестах этого сценария
   # она будет создана на фабрике заново для каждого блока it, где она вызывается
-  let(:game_question) { FactoryGirl.create(:game_question, a: 2, b: 1, c: 4, d: 3) }
+  let(:game_question) { FactoryBot.build(:game_question, a: 2, b: 1, c: 4, d: 3) }
 
   # группа тестов на игровое состояние объекта вопроса
   context 'game status' do
@@ -34,6 +30,7 @@ RSpec.describe GameQuestion, type: :model do
   # }
   #
 
+=begin
   context 'user helpers' do
     it 'correct audience_help' do
       expect(game_question.help_hash).not_to include(:audience_help)
@@ -46,4 +43,5 @@ RSpec.describe GameQuestion, type: :model do
       expect(ah.keys).to contain_exactly('a', 'b', 'c', 'd')
     end
   end
+=end
 end

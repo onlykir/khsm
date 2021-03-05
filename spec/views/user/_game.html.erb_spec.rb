@@ -1,3 +1,4 @@
+=begin
 require 'rails_helper'
 
 # Тест на фрагмент users/_game.html.erb, который выводит
@@ -46,3 +47,4 @@ RSpec.describe 'users/_game', type: :view do
     expect(rendered).to match '1 000 ₽'
   end
 end
+=end

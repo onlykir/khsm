@@ -1,3 +1,4 @@
+=begin
 require 'rails_helper'
 
 # Тест на шаблон games/_game_question.html.erb
@@ -55,3 +56,4 @@ RSpec.describe 'games/game_question', type: :view do
     render partial: 'games/game_question', object: game_question
   end
 end
+=end

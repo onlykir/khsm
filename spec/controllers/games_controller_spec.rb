@@ -1,3 +1,4 @@
+=begin
 # (c) goodprogrammer.ru
 
 require 'rails_helper'
@@ -93,3 +94,4 @@ RSpec.describe GamesController, type: :controller do
     end
   end
 end
+=end

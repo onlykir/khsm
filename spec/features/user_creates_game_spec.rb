@@ -1,3 +1,4 @@
+=begin
 # Как и в любом тесте, подключаем помощник rspec-rails
 require 'rails_helper'
 
@@ -51,3 +52,4 @@ RSpec.feature 'USER creates a game', type: :feature do
     # этого кода быть не должно, также, как и byebug
   end
 end
+=end

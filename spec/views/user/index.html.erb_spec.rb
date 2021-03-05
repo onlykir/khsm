@@ -1,3 +1,4 @@
+=begin
 require 'rails_helper'
 
 # Тест на шаблон users/index.html.erb
@@ -34,3 +35,4 @@ RSpec.describe 'users/index', type: :view do
     expect(rendered).to match /Вадик.*Миша/m
   end
 end
+=end
